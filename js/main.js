@@ -36,9 +36,9 @@ $(document).ready(function () {
 });
 // ------------------- SLIDER --------------
 $(function () {
-  $(".your-class").slick({
+  $(".main-slider").slick({
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: 1,
     speed: 2000,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -51,5 +51,27 @@ $(function () {
         },
       },
     ],
+    arrows: true,
+    appendArrows: $(".your-class-arrow"),
+    prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i> ',
+    nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
   });
+  //   $(".main-slider").appendDots();
 });
+//   $(".main-slider").slick({
+//     infinite: true,
+//     slidesToShow: 3,
+//     speed: 2000,
+//     autoplay: true,
+//     autoplaySpeed: 2000,
+//     // responsive: [
+//     //   {
+//     //     breakpoint: 768,
+//     //     settings: {
+//     //       slidesToShow: 3,
+//     //       dots: false,
+//     //     },
+//     //   },
+//     // ],
+//   });
+//

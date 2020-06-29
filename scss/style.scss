@@ -9,6 +9,7 @@
 @import "fonts.scss";
 @import "variables.scss";
 @import "mixins.scss";
+@import "slick.scss";
 
 body {
   -webkit-box-sizing: border-box;
@@ -151,7 +152,7 @@ body {
       flex-grow: 0.6;
       padding: 20px;
       color: #dbc325;
-      background-image: url(img/vol.png);
+      background-image: url(../img/vol.png);
       background-size: cover;
       max-width: -webkit-fit-content;
       max-width: -moz-fit-content;
@@ -508,6 +509,38 @@ body {
   text-decoration: none;
   color: #101625;
   text-shadow: 0 0 15px #1b1a1a;
+}
+
+// -------------SLIDER------------
+.main-slider {
+  display: flex;
+  margin: 0 auto;
+  width: 60%;
+  height: 400px;
+  align-items: center;
+  &-item {
+    width: 60%;
+    text-align: center;
+    &_img {
+      margin: 0 auto;
+      height: 250px;
+    }
+  }
+}
+.your-class-arrow {
+  text-align: center;
+  opacity: 90%;
+}
+.fa-chevron-left {
+  font-size: 50px;
+  position: relative;
+  top: 180px;
+}
+.fa-chevron-right {
+  font-size: 50px;
+  margin-left: 65%;
+  position: relative;
+  top: 180px;
 }
 @media screen and (max-width: 992px) {
   .cookies {
