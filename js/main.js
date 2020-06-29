@@ -6,7 +6,7 @@ $(document).on("scroll", window, function () {
   }
 });
 $(".btn-cookies").on("click", function () {
-  $(".cookies").removeClass("cookies");
+  $(".cookies").hide("cookies");
 });
 
 // ------------ Медленные якоря-------------
