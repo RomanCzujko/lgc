@@ -5,10 +5,10 @@
 * Browsers: last 4 version
 */
 
-@import "normalize.scss";
-@import "fonts.scss";
-@import "variables.scss";
-@import "mixins.scss";
+@import "_normalize.scss";
+@import "_fonts.scss";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 body {
   -webkit-box-sizing: border-box;
@@ -151,7 +151,7 @@ body {
       flex-grow: 0.6;
       padding: 20px;
       color: #dbc325;
-      background-image: url(/img/vol.png);
+      background-image: url(img/vol.png);
       background-size: cover;
       max-width: -webkit-fit-content;
       max-width: -moz-fit-content;
