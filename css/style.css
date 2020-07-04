@@ -445,6 +445,23 @@ body {
   box-sizing: border-box;
 }
 
+.upheader-info {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+}
+.upheader-info__img {
+  width: 70px;
+  padding: 10px;
+}
+.upheader-info__text {
+  font-family: "Lato Light";
+  font-size: 13px;
+  margin-right: 50px;
+  align-self: center;
+  letter-spacing: 0.7px;
+}
+
 .video-intro {
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -472,8 +489,7 @@ body {
   color: black;
   margin: 0 auto;
   justify-content: space-around;
-  height: 100px;
-  margin-top: 20px;
+  height: 80px;
 }
 .header__logo {
   height: 50px;
@@ -489,15 +505,17 @@ body {
 }
 .header-nav ul {
   display: flex;
-  width: 85%;
+  width: 95%;
   color: black;
+  background-color: #5ce685;
+  border-radius: 5px;
   justify-content: space-around;
   align-items: center;
 }
 .header-nav li {
   list-style: none;
   font-family: "Lato Bold";
-  font-size: 14px;
+  font-size: 15px;
 }
 .header-nav li:hover {
   cursor: pointer;
@@ -529,11 +547,11 @@ body {
 .main-face-steps__1:hover {
   transform: scale(1.1, 1.1);
   cursor: pointer;
-  transition: 2s;
+  transition: 1s;
 }
 .main-face-steps__1:not(:hover) {
   transform: scale(1, 1);
-  transition: 2s;
+  transition: 1s;
 }
 .main-face-steps__2 {
   align-self: center;
@@ -549,12 +567,12 @@ body {
 }
 .main-face-steps__2:hover {
   transform: scale(1.1, 1.1);
-  transition: 1.5s;
+  transition: 1s;
   cursor: pointer;
 }
 .main-face-steps__2:not(:hover) {
   transform: scale(1, 1);
-  transition: 1.5s;
+  transition: 1s;
 }
 .main-face-steps__3 {
   align-self: center;
@@ -564,12 +582,12 @@ body {
 }
 .main-face-steps__3:hover {
   transform: scale(1.1, 1.1);
-  transition: 1.5s;
+  transition: 1s;
   cursor: pointer;
 }
 .main-face-steps__3:not(:hover) {
   transform: scale(1, 1);
-  transition: 1.5s;
+  transition: 1s;
 }
 .main-face-steps__3-title {
   font-size: 18px;
@@ -593,11 +611,11 @@ body {
 }
 .main-face__angle-wraper:hover {
   transform: translateY(20px);
-  transition: 1.5s;
+  transition: 1s;
   cursor: pointer;
 }
 .main-face__angle-wraper:not(:hover) {
-  transition: 1.5s;
+  transition: 1s;
 }
 
 .main-nav {
@@ -945,21 +963,22 @@ body {
 
   .main-face-steps {
     height: 50vh;
+    margin-top: 40px;
   }
   .main-face-steps__1 {
     font-size: 14px;
   }
   .main-face-steps__2 {
-    font-size: 50px;
+    font-size: 14px;
   }
   .main-face-steps__3-title {
-    font-size: 16px;
+    font-size: 14px;
   }
   .main-face-steps__3-list {
     font-size: 14px;
   }
   .main-face-general {
-    font-size: 22px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -972,6 +991,10 @@ body {
     left: 0;
     height: 120vh;
     z-index: -1;
+  }
+
+  .upheader-info__text {
+    display: none;
   }
 
   .main-portfolio-wraper {
@@ -1096,7 +1119,8 @@ body {
   .main-face-steps {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+    align-items: center;
     height: 100%;
     width: 100%;
     margin: 0;
@@ -1104,20 +1128,17 @@ body {
   }
   .main-face-steps__1 {
     align-self: center;
-    margin: 10px;
-    font-size: 12px;
+    font-size: 14px;
   }
   .main-face-steps__2 {
     align-self: center;
     margin: 0;
     padding: 0px;
-    font-size: 30px;
+    font-size: 14px;
     background-image: none;
-    width: 30%;
   }
   .main-face-steps__3 {
     align-self: center;
-    margin: 10px;
     min-width: 300px;
   }
   .main-face-steps__3-title {

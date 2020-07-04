@@ -15,6 +15,23 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+.upheader-info {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+
+  &__img {
+    width: 70px;
+    padding: 10px;
+  }
+  &__text {
+    font-family: $paragraf-info-font;
+    font-size: 13px;
+    margin-right: 50px;
+    align-self: center;
+    letter-spacing: 0.7px;
+  }
+}
 .video-intro {
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -44,8 +61,7 @@ body {
   margin: 0 auto;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  height: 100px;
-  margin-top: 20px;
+  height: 80px;
   &__logo {
     height: 50px;
     align-self: center;
@@ -66,8 +82,10 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 85%;
+    width: 95%;
     color: black;
+    background-color: #5ce685;
+    border-radius: 5px;
 
     -ms-flex-pack: distribute;
     justify-content: space-around;
@@ -78,7 +96,7 @@ body {
   &-nav li {
     list-style: none;
     font-family: "Lato Bold";
-    font-size: 14px;
+    font-size: 15px;
   }
   &-nav li:hover {
     cursor: pointer;
@@ -112,7 +130,7 @@ body {
     &__1:hover {
       transform: scale(1.1, 1.1);
       cursor: pointer;
-      transition: 2s;
+      transition: $hover-transitions-time;
     }
     &__1:not(:hover) {
       -webkit-transform: scale(1, 1);
@@ -120,7 +138,7 @@ body {
       transform: scale(1, 1);
       -webkit-transition: 2s;
       -o-transition: 2s;
-      transition: 2s;
+      transition: $hover-transitions-time;
     }
     &__2 {
       align-self: center;
@@ -551,21 +569,22 @@ body {
   .main-face {
     &-steps {
       height: 50vh;
+      margin-top: 40px;
     }
     &-steps__1 {
       font-size: 14px;
     }
     &-steps__2 {
-      font-size: 50px;
+      font-size: 14px;
     }
     &-steps__3-title {
-      font-size: 16px;
+      font-size: 14px;
     }
     &-steps__3-list {
       font-size: 14px;
     }
     &-general {
-      font-size: 22px;
+      font-size: 14px;
     }
   }
   // .face-container {
@@ -585,6 +604,9 @@ body {
         z-index: -1;
       }
     }
+  }
+  .upheader-info__text {
+    display: none;
   }
   .main-portfolio-wraper {
     display: -webkit-box;
@@ -725,7 +747,7 @@ body {
       -ms-flex-direction: column;
       flex-direction: column;
       -ms-flex-pack: distribute;
-      justify-content: space-around;
+      align-items: center;
       height: 100%;
       width: 100%;
       margin: 0;
@@ -734,8 +756,8 @@ body {
         -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-        margin: 10px;
-        font-size: 12px;
+
+        font-size: 14px;
         // min-width: 300px;
       }
       &__2 {
@@ -744,16 +766,15 @@ body {
         align-self: center;
         margin: 0;
         padding: 0px;
-        font-size: 30px;
+        font-size: 14px;
         background-image: none;
-        width: 30%;
       }
 
       &__3 {
         -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-        margin: 10px;
+
         min-width: 300px;
       }
       &__3-title {
