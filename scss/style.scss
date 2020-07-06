@@ -17,9 +17,9 @@ body {
 }
 .upheader-info {
   display: flex;
-  margin: 0 auto;
   width: 80%;
-
+  margin: 0 auto;
+  justify-content: center;
   &__img {
     width: 70px;
     padding: 10px;
@@ -28,7 +28,7 @@ body {
     font-family: $paragraf-info-font;
     font-size: 13px;
     margin-right: 50px;
-    align-self: center;
+
     letter-spacing: 0.7px;
   }
 }
@@ -82,7 +82,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 95%;
+    width: 80%;
     color: black;
     background-color: #5ce685;
     border-radius: 5px;
@@ -113,18 +113,18 @@ body {
   &-steps {
     display: flex;
     color: black;
-    justify-content: center;
-    height: 70vh;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
     &__1 {
-      align-self: center;
       font-size: 16px;
       text-align: center;
       font-family: "Lato Regular";
       display: flex;
       flex-direction: column;
       &-video {
-        min-width: 250px;
-        width: 300px;
+        max-width: 500px;
+        width: 90%;
       }
     }
     &__1:hover {
@@ -141,12 +141,9 @@ body {
       transition: $hover-transitions-time;
     }
     &__2 {
-      align-self: center;
       font-size: 16px;
       text-align: center;
-
       flex-grow: 0.6;
-      padding: 20px;
 
       background-size: cover;
       max-width: -webkit-fit-content;
@@ -173,9 +170,7 @@ body {
     }
     &__3 {
       -ms-flex-item-align: start;
-      align-self: center;
       text-align: center;
-      width: 25%;
       font-family: "Lato Regular";
     }
     &__3:hover {

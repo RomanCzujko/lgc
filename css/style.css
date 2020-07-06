@@ -447,8 +447,9 @@ body {
 
 .upheader-info {
   display: flex;
-  margin: 0 auto;
   width: 80%;
+  margin: 0 auto;
+  justify-content: center;
 }
 .upheader-info__img {
   width: 70px;
@@ -458,7 +459,6 @@ body {
   font-family: "Lato Light";
   font-size: 13px;
   margin-right: 50px;
-  align-self: center;
   letter-spacing: 0.7px;
 }
 
@@ -505,7 +505,7 @@ body {
 }
 .header-nav ul {
   display: flex;
-  width: 95%;
+  width: 80%;
   color: black;
   background-color: #5ce685;
   border-radius: 5px;
@@ -529,11 +529,11 @@ body {
 .main-face-steps {
   display: flex;
   color: black;
-  justify-content: center;
-  height: 70vh;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
 }
 .main-face-steps__1 {
-  align-self: center;
   font-size: 16px;
   text-align: center;
   font-family: "Lato Regular";
@@ -541,8 +541,8 @@ body {
   flex-direction: column;
 }
 .main-face-steps__1-video {
-  min-width: 250px;
-  width: 300px;
+  max-width: 500px;
+  width: 90%;
 }
 .main-face-steps__1:hover {
   transform: scale(1.1, 1.1);
@@ -554,11 +554,9 @@ body {
   transition: 1s;
 }
 .main-face-steps__2 {
-  align-self: center;
   font-size: 16px;
   text-align: center;
   flex-grow: 0.6;
-  padding: 20px;
   background-size: cover;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
@@ -575,9 +573,8 @@ body {
   transition: 1s;
 }
 .main-face-steps__3 {
-  align-self: center;
+  -ms-flex-item-align: start;
   text-align: center;
-  width: 25%;
   font-family: "Lato Regular";
 }
 .main-face-steps__3:hover {
